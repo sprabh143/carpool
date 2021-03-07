@@ -20,7 +20,7 @@ include('remember.php');
       <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <!--Navigation Barr-->  
+    <!--Navigation Bar-->  
       <?php
       if(isset($_SESSION["user_id"])){
             include("navigationbarconnected.php");
