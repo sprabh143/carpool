@@ -30,6 +30,26 @@ include('remember.php');
 
       ?>
 
+    <div class="container-fluid" id="myContainer">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <h1>Find your Ride</h1>
+            <!--Search Form-->
+            <form class="form-inline" method="get" id="searchForm">
+              <div class="form-group">
+                <label class="sr-only" for="departure">Pickup:</label>
+                <input type="text" placeholder="Pickup Point" name="departure" id="departure">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="destination">Drop:</label>
+                <input type="text" placeholder="Drop Point" name="destination" id="destination">
+              </div>
+              <input type="submit" value="Search">
+            </form>
+          </div>
+        </div>
+    </div>
+
 
     <!--Login form-->    
       <form method="post" id="loginform">

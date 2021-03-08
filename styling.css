@@ -34,6 +34,16 @@ body{
     background-color: rgb(114,190,35);   
 }
 
+#myContainer{
+    margin-top: 80px;
+    text-align: center;
+    color: black;
+}
+
+h1{
+    font-size: 4em;
+}
+
 /*Style the footer*/
 .footer{
     position: absolute;

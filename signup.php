@@ -108,7 +108,7 @@ if(!$result){
 //Send the user an email with a link to activate.php with their email and activation code
 $message = "Please click on this link to activate your account:\n\n";
 $message .= "beamu.host20.uk/activate.php?email=" . urlencode($email) . "&key=$activationKey";
-if(mail($email, 'Confirm your Registration', $message, 'From:'.'developmentisland@gmail.com')){
+if(mail($email, 'Confirm your Registration', $message, 'From:'.'sprabh91@gmail.com')){
        echo "<div class='alert alert-success'>Thank for your registring! A confirmation email has been sent to $email. Please click on the activation link to activate your account.</div>";
 }
         
