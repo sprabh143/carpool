@@ -18,7 +18,7 @@ include('remember.php');
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="styling.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGdl6lD8I7BsC2_avadc4Jb3kprW2tXH0"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB22sgpyuEDJNGbj5pgXyU1RD4tqj1eOck"></script>
   </head>
   <body>
     <!--Navigation Bar-->  
