@@ -43,11 +43,11 @@ include('remember.php');
             <form class="form-inline" method="get" id="searchForm">
               <div class="form-group">
                 <label class="sr-only" for="departure"></label>
-                <input type="text" placeholder="Pickup Point" name="departure" id="departure">
+                <input class="form-control input-lg" type="text" placeholder="Pickup Point" name="departure" id="departure">
               </div>
               <div class="form-group">
                 <label class="sr-only" for="destination"></label>
-                <input type="text" placeholder="Drop Point" name="destination" id="destination">
+                <input class="form-control input-lg" type="text" placeholder="Drop Point" name="destination" id="destination">
               </div>
               <input type="submit" value="Search" class="btn btn-lg white" name="search">
             </form>
