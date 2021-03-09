@@ -7,6 +7,17 @@ var mapOptions = {
     mapTypeId: google.maps.MapTypeId.ROADMAP
 }
 
+//creating autocomplete objects
+var input1 = document.getElementById("departure");
+var input2 = document.getElementById("destination");
+
+var options = {
+    types: ['(cities)']
+}
+// autocomplete edited to include intracity locations
+var autocomplete1 = new google.maps.places.Autocomplete(input1);
+var autocomplete2 = new google.maps.places.Autocomplete(input2);
+
 //onload:
 google.maps.event.addDomListener(window, 'load', initialize);
 

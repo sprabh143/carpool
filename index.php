@@ -17,8 +17,11 @@ include('remember.php');
     <title>BeamU</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="styling.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/sunny/jquery-ui.css">
     <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB22sgpyuEDJNGbj5pgXyU1RD4tqj1eOck"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB22sgpyuEDJNGbj5pgXyU1RD4tqj1eOck&libraries=places"></script>
   </head>
   <body>
     <!--Navigation Bar-->  
@@ -39,11 +42,11 @@ include('remember.php');
             <!--Search Form-->
             <form class="form-inline" method="get" id="searchForm">
               <div class="form-group">
-                <label class="sr-only" for="departure">Pickup:</label>
+                <label class="sr-only" for="departure"></label>
                 <input type="text" placeholder="Pickup Point" name="departure" id="departure">
               </div>
               <div class="form-group">
-                <label class="sr-only" for="destination">Drop:</label>
+                <label class="sr-only" for="destination"></label>
                 <input type="text" placeholder="Drop Point" name="destination" id="destination">
               </div>
               <input type="submit" value="Search" class="btn btn-lg white" name="search">
