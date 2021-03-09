@@ -58,7 +58,13 @@ include('remember.php');
     </div>
 
     <!--Sign up Button-->
-        <button class="btn btn-lg signup" data-toggle="modal" data-target="#signupModal">Sign up</button>
+    <?php
+      if(!isset($_SESSION["user_id"])){
+            echo "<button class='btn btn-lg signup' data-toggle='modal' data-target='#signupModal'>Sign up</button>";
+        }
+
+      ?>
+        
 
     <!--Login form-->    
       <form method="post" id="loginform">
@@ -135,6 +141,14 @@ include('remember.php');
                       <input class="form-control" type="text" name="username" id="username" placeholder="Username" maxlength="30">
                   </div>
                   <div class="form-group">
+                      <label for="firstname" class="sr-only">Firstname:</label>
+                      <input class="form-control" type="text" name="firstname" id="firstname" placeholder="Firstname" maxlength="30">
+                  </div>
+                  <div class="form-group">
+                      <label for="lastname" class="sr-only">Lastname:</label>
+                      <input class="form-control" type="text" name="lastname" id="lastname" placeholder="Lastname" maxlength="30">
+                  </div>
+                  <div class="form-group">
                       <label for="email" class="sr-only">Email:</label>
                       <input class="form-control" type="email" name="email" id="email" placeholder="Email Address" maxlength="50">
                   </div>
@@ -145,6 +159,18 @@ include('remember.php');
                   <div class="form-group">
                       <label for="password2" class="sr-only">Confirm password</label>
                       <input class="form-control" type="password" name="password2" id="password2" placeholder="Confirm password" maxlength="30">
+                  </div>
+                  <div class="form-group">
+                      <label for="phonenumber" class="sr-only">Telephone:</label>
+                      <input class="form-control" type="text" name="phonenumber" id="phonenumber" placeholder="Telephone Number" maxlength="30">
+                  </div>
+                  <div class="form-group">
+                      <label><input type="radio" name="gender" id="male" value="male">Male</label>
+                      <label><input type="radio" name="gender" id="female" value="female">Female</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="moreinformation">Bio: </label>
+                    <textarea name="moreinformation" id="moreinformation" class="form-control" rows="5" maxlength="300"></textarea>
                   </div>
               </div>
               <div class="modal-footer">
