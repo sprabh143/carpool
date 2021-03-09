@@ -37,7 +37,7 @@ include('remember.php');
     <div class="container-fluid" id="myContainer">
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
-            <h1>Find your Ride</h1>
+            <h1 style="font-size:600%; color:#D7DBDD;">Find your Ride</h1>
 
             <!--Search Form-->
             <form class="form-inline" method="get" id="searchForm">
@@ -57,6 +57,8 @@ include('remember.php');
         </div>
     </div>
 
+    <!--Sign up Button-->
+        <button class="btn btn-lg signup" data-toggle="modal" data-target="#signupModal">Sign up</button>
 
     <!--Login form-->    
       <form method="post" id="loginform">
@@ -200,7 +202,7 @@ include('remember.php');
     <!-- Footer-->
       <div class="footer">
           <div class="container">
-              <p>Team Novelty<?php $today = date("Y"); echo $today?>.</p>
+              <p style="color:#D7DBDD">Team Novelty <?php $today = date("Y"); echo $today?>.</p>
           </div>
       </div>
 
