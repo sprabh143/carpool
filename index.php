@@ -16,8 +16,9 @@ include('remember.php');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BeamU</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-      <link href="styling.css" rel="stylesheet">
-      <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <link href="styling.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGdl6lD8I7BsC2_avadc4Jb3kprW2tXH0"></script>
   </head>
   <body>
     <!--Navigation Bar-->  
@@ -34,6 +35,7 @@ include('remember.php');
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
             <h1>Find your Ride</h1>
+
             <!--Search Form-->
             <form class="form-inline" method="get" id="searchForm">
               <div class="form-group">
@@ -44,8 +46,10 @@ include('remember.php');
                 <label class="sr-only" for="destination">Drop:</label>
                 <input type="text" placeholder="Drop Point" name="destination" id="destination">
               </div>
-              <input type="submit" value="Search">
+              <input type="submit" value="Search" class="btn btn-lg white" name="search">
             </form>
+            <!--Google Map-->
+            <div id="googleMap"></div>
           </div>
         </div>
     </div>
@@ -202,5 +206,6 @@ include('remember.php');
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="javascript.js"></script>
+    <script src="map.js"></script>
   </body>
 </html>
