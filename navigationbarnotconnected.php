@@ -19,6 +19,7 @@
                     <li><a href="contact-view.php">Contact us</a></li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#signupModal" data-toggle="modal">Register</a></li>  
                     <li><a href="#loginModal" data-toggle="modal">Login</a></li>
                   </ul>
 
